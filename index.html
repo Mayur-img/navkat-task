@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <nav>
+        <input type="checkbox" id="nav-menu">
+        <label for="nav-menu">
+            <i class="fa fa-bars" id="bars"></i>
+            <i class="fa fa-times" id="cross-bar"></i>
+        </label>    
+            <div class="logo">
+                <!-- <img src="" alt=""> -->
+                <div class="heading">
+                    NAV<strong>KAR</strong>
+                </div>
+            </div>
+
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Our Work</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        
+    </nav>
+
+    <section>
+        <div class="parent">
+            <div class="image-box">
+                <img src="assets/images/bg-img.jpg" alt="">
+            </div>
+            <div class="form-box">
+                <form action="" id="form">
+                    <h2>Sign Up</h2>
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" required>
+                <div class="error"></div>
+                <!-- <label for="explicit-label-name">Name: </label> -->
+<!-- <input type="text" id="explicit-label-name" name="name" /> -->
+                
+                <label for="address">Address</label>
+                <select name="address" id="address" required>
+                    <option value="">None</option>
+                    <option value="Dhayari">Dhayari</option>
+                    <option value="warje">Warje</option>
+                    <option value="kothrud">Kothrud</option>
+                    <option value="Hinjewadi">Hinjewadi</option>
+                    <option value="maan">Maan</option>
+                </select>
+                <div class="error"></div>
+                
+                <label for="gender">Gender</label>
+                <select name="gender" id="gender" required>
+                    <option value="">None</option>
+                    <option value="M">Male</option>
+                    <option value="F">Female</option>
+                    <option value="T">Transgender</option>
+                </select>
+                <div class="errorgender"></div>
+                
+                <label for="contact">Contact</label>
+                <input type="text" id="contact" maxlength="10" pattern="[0-9]{10}" required>
+                <div class="error"></div>
+
+                <label for="email">Email</label>
+                <input type="email" id="email" required>
+                <div class="error"></div>
+                
+                <label for="dob">Date of Birth</label>
+                <input type="date" name="" id="dob" required>
+                <div class="error"></div>
+                
+                <div class="button">
+                <input type="submit" value="Save">
+                <input type="reset" value="Update">
+                <input type="button" value="Delete">
+                </div>
+            </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- <script src="validate.js"></script> -->
+</body>
+</html>
